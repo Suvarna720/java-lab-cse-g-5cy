@@ -83,5 +83,6 @@ public class QuadraticEquation {
 ## Case1:(D>0)
 ![Experiment 1b) output](quard-1.png)
 ![Experiment 1b) output](quard-2.png)
+![Experiment 1b) output](quard-3.png)
 
 
