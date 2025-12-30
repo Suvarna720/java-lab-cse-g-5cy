@@ -52,4 +52,32 @@ class Main{
 ```
 ## Output:
 ![Experiment-2b Output](sum.png)
+## 2c) Title: Implement Constructor
+## Source Code:
+``` java
+class Student{
+    String sname;
+    int sage;
+    double smarks;
+  Student(String name,int age,double marks){
+    sname = name;
+    sage = age;
+    smarks = marks;
+  }
+  void display(){
+    System.out.println("Student name: " +sname);
+    System.out.println("Student age: " +sage);
+    System.out.println("Student marks: " +smarks);
+  }
+}
+class Main{
+    public static void main(String[] args){
+      Student s = new Student("Suvarna",18,939);
+      s.display();
+    }
+  }
+```
+## Output:
+![Experiment-2c Output](student.png)
+
 
