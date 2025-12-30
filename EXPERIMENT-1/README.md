@@ -80,5 +80,6 @@ public class QuadraticEquation {
 }
 ```
 ## Output:
+![Experiment 1b) output](quard-1.png)
 
 
