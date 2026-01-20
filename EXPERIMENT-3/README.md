@@ -108,3 +108,65 @@ class Main {
 ```
 ## Output:
 ![Experiment-3b Output](3b.png)
+## 3b) Title: Binary search mechanism
+## Source Code:
+``` java
+import java.util.Scanner;
+
+class BubbleSort {
+    int arr[];
+    int size;
+
+    BubbleSort(int size) {
+        this.size = size;
+        arr = new int[size];
+    }
+
+    void setArray() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter array elements:");
+        for (int i = 0; i < size; i++) {
+            arr[i] = sc.nextInt();
+        }
+    }
+
+    void sort() {
+        int temp;
+        for (int i = 0; i < size - 1; i++) {
+            for (int j = 0; j < size - 1 - i; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+    void display() {
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+}
+
+class Main {
+
+    public static void main(String args[]) {
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of array: ");
+        int n = sc.nextInt();
+        BubbleSort bs = new BubbleSort(n);
+        bs.setArray();
+        System.out.print("Before sorting: ");
+        bs.display();
+        bs.sort();
+        System.out.print("After sorting: ");
+        bs.display();
+    }
+}
+```
+## Output:
+![Experiment-3c Output](3c.png)
+
