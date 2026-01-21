@@ -108,7 +108,7 @@ class Main {
 ```
 ## Output:
 ![Experiment-3b Output](3b.png)
-## 3b) Title: Binary search mechanism
+## 3c) Title: Binary search mechanism
 ## Source Code:
 ``` java
 import java.util.Scanner;
