@@ -40,6 +40,6 @@ class Main {
 }
 ```
 ## Output:
-![Exp-4a Output](exp4a.png)
+![Exp-4a Output](Exp4a.png)
 
                               
