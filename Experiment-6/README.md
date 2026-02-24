@@ -31,7 +31,7 @@ class ArrayIndexExceptionDemo {
 }
 ```
 ## Output:
-![EXP-6A OUTPUT](exception.png)
+![EXP-6A OUTPUT](exp6a.png)
 
 ## EXPERIMENT-6b
 ## Title:Illustrating Multiple catch clauses.
@@ -77,7 +77,7 @@ class MultipleCatch {
 }
 ```
 ## Output:
-![EXP-6b OUTPUT](multiple.png)
+![EXP-6b OUTPUT](exp6b.png)
 
 ## EXPERIMENT-6c
 ## Title:Illustrating creation of java bulit in executions scenario.
@@ -122,7 +122,7 @@ public class MultipleExceptionsDemo {
 }
 ```
 ## Output:
-![EXP-6c OUTPUT](built-in.png)
+![EXP-6c OUTPUT](exp6c.png)
 
 
 
