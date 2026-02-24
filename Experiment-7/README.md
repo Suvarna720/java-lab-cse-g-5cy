@@ -33,7 +33,7 @@ class userRegistration {
 }
 ```
 ## Output:
-![Exp-7a output](country.png)
+![Exp-7a output](exp7a.png)
 
 ## Experiment-7b
 ## Title:Creates threads by extending thread class.
@@ -91,7 +91,7 @@ class TestThread {
 }
 ```
 ## Output:
-![Exp-7b output](goodmorning.png)
+![Exp-7b output](exp7b.png)
 
 ## Experiment-7c
 ## Title:Illustrating is Alive and join().
@@ -139,6 +139,6 @@ class ThreadDemo {
 }
 ```
 ## Output:
-![Exp-7c output](longrunning.png)
+![Exp-7c output](exp7c.png)
 
 
