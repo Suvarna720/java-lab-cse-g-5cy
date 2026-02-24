@@ -64,7 +64,7 @@ class TestSort {
 }
 ```
 ## Output:
-![EXP-5a output](sort.png)
+![EXP-5a output](exp5a.png)
 
 ## experiment-5b
 ## Title:To implement Runtime polymorphism.
@@ -112,7 +112,7 @@ class TestVehicle
 }
 ```
 ## Output:
-![EXP-5b output](vehicle.png)
+![EXP-5b output](exp5b.png)
 
 ## experiment-5c
 ## Title:To implement stringbuffer to delete,remove character.
@@ -135,7 +135,7 @@ class DeleteChar
 }
 ```
 ## Output:
-![EXP-5c output](buffer.png)
+![EXP-5c output](exp5c.png)
 
 
 
