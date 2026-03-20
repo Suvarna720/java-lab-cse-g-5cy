@@ -171,5 +171,64 @@ public class PerfectNumber {
 ## Output:
 ![ADDEXP-4 Output](exp4.png)
 
+# Add Experiments-5
+## Title: Java program that reads information about all the players and print team-wise list containing names of players with their batting average.
+## Source code:
+``` java
+import java.util.Scanner;
+
+class CricketMain {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter number of players: ");
+        int n = sc.nextInt();
+        sc.nextLine();
+
+        Cricket[] players = new Cricket[n];
+
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter player name: ");
+            String playerName = sc.nextLine();
+
+            System.out.print("Enter team name: ");
+            String teamName = sc.nextLine();
+
+            System.out.print("Enter batting average: ");
+            double battingAverage = sc.nextDouble();
+            sc.nextLine();
+
+            players[i] = new Cricket(playerName, teamName, battingAverage);
+        }
+
+        for (int i = 0; i < n; i++) {
+            boolean printed = false;
+
+            for (int k = 0; k < i; k++) {
+                if (players[i].teamName.equalsIgnoreCase(players[k].teamName)) {
+                    printed = true;
+                    break;
+                }
+            }
+
+            if (!printed) {
+                System.out.println("\nTeam: " + players[i].teamName);
+
+                for (int j = 0; j < n; j++) {
+                    if (players[j].teamName.equalsIgnoreCase(players[i].teamName)) {
+                        players[j].display();
+                    }
+                }
+            }
+        }
+
+        sc.close();
+    }
+}
+
+```
+## Output:
+![ADDEXP-5 Output](exp5.png)
+
 
 
