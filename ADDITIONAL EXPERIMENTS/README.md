@@ -177,6 +177,17 @@ public class PerfectNumber {
 ``` java
 import java.util.Scanner;
 
+class Cricket {
+    String name, team;
+    double avg;
+
+    Cricket(String n, String t, double a) {
+        name = n;
+        team = t;
+        avg = a;
+    }
+}
+
 class CricketMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -185,47 +196,25 @@ class CricketMain {
         int n = sc.nextInt();
         sc.nextLine();
 
-        Cricket[] players = new Cricket[n];
+        Cricket[] p = new Cricket[n];
 
         for (int i = 0; i < n; i++) {
-            System.out.print("Enter player name: ");
-            String playerName = sc.nextLine();
+            System.out.print("Enter player Name: ");
+            String name = sc.nextLine();
 
-            System.out.print("Enter team name: ");
-            String teamName = sc.nextLine();
+            System.out.print("Enter Team: ");
+            String team = sc.nextLine();
 
-            System.out.print("Enter batting average: ");
-            double battingAverage = sc.nextDouble();
+            System.out.print("Enter Average Batting: ");
+            double avg = sc.nextDouble();
             sc.nextLine();
 
-            players[i] = new Cricket(playerName, teamName, battingAverage);
-        }
-
+            p[i] = new Cricket(name, team, avg);
         for (int i = 0; i < n; i++) {
-            boolean printed = false;
-
-            for (int k = 0; k < i; k++) {
-                if (players[i].teamName.equalsIgnoreCase(players[k].teamName)) {
-                    printed = true;
-                    break;
-                }
-            }
-
-            if (!printed) {
-                System.out.println("\nTeam: " + players[i].teamName);
-
-                for (int j = 0; j < n; j++) {
-                    if (players[j].teamName.equalsIgnoreCase(players[i].teamName)) {
-                        players[j].display();
-                    }
-                }
-            }
+            System.out.println(p[i].name + " - " + p[i].team + " - " + p[i].avg);
         }
-
-        sc.close();
     }
 }
-
 ```
 ## Output:
 ![ADDEXP-5 Output](exp5.png)
